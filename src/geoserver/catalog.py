@@ -454,7 +454,7 @@ class Catalog(object):
             archive = prepare_upload_bundle(name, data)
             message = open(archive, 'rb')
             if "tfw" in data:
-                headers['Content-type'] = 'application/archive'
+                headers['Content-type'] = 'application/zip'
                 ext = "worldimage"
         elif isinstance(data, basestring):
             message = open(data, 'rb')
